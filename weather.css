@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+body{
+    background-size: cover;
+}
+header{
+    display:flex;
+    width:95%;
+    height:40vh;
+    margin: auto;
+    margin-top:20px;
+    background-image: url("3d-photoshop.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px;
+    overflow: hidden;
+}
+
+/* highlight - section */
+div.highlight_reports{
+   width:60%;
+   text-align:center;
+   padding:5%;
+   color:white;
+   font-family: Arial, Helvetica, sans-serif;
+   position: relative;
+   text-shadow: 2px 2px 2px rgb(73, 70, 70);
+}
+div.highlight_reports figcaption{
+    font-size: 3vh;
+    font-style: italic;
+}
+div.highlight_reports img{
+    display: inline-block;
+    height:60px;
+}
+div.highlight_reports > h1{
+    font-size: 3vw;
+}
+div.highlight_reports > time{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+/* search - bar - section */
+div.search_bar_section{
+   width:35%;
+   text-align: center;
+   padding:2%;
+}
+div.search_bar_section > input{
+    width:80%;
+    height:5vh;
+    padding:2%;
+    font-size: 3vh;
+    border:1px solid transparent;
+    border-radius: 10px;
+    padding-left: 50px;
+    margin-left: -240px;
+}
+::-webkit-input-placeholder{color:rgb(252, 224, 238);word-spacing: 5px;}
+
+
+@keyframes sheen {
+    100% {
+      transform: rotate(360deg) ;
+    }
+  }
+
+/* key - value -section */
+div.key_info{
+    width:35%;
+    text-align:center;
+    padding:2%;
+    display: flex;
+}
+div.key_info h2{
+    width:70%;
+    height: 60%;
+    margin:2%;
+    padding:1%;
+    text-transform: capitalize;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    color:rgb(7, 7, 7);
+    font-size: 15px;
+    font-weight: lighter;
+    border-bottom:1px solid;
+    text-shadow: 2px 2px 2px rgb(73, 70, 70);
+    position: relative;
+    top:120px;
+}
+div.key_info h2 > span{
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+div.key_info h2:nth-child(1){color:rgb(237, 237, 245);background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.014),rgba(255, 255, 255, 0),rgba(18, 184, 235, 0.452));}
+div.key_info h2:nth-child(2){color:rgb(227, 240, 230);background-image: linear-gradient(180deg,rgba(255, 255, 255, 0),rgba(211, 247, 245, 0),rgba(94, 243, 211, 0.445));}
+div.key_info h2:nth-child(3){color:rgb(231, 218, 218);background-image: linear-gradient(180deg,rgba(255, 255, 255, 0),rgba(247, 216, 211, 0.027),rgba(241, 146, 69, 0.356));}
+div.key_info h2:nth-child(4){color:rgb(233, 218, 231);background-image: linear-gradient(180deg,rgba(255, 255, 255, 0),rgba(247, 211, 245, 0.233),rgba(227, 83, 240, 0.425));}
+
+footer{
+    position: relative;
+    bottom:-3%;
+    left: 50%;
+    transform: translateX(-50%);
+    height:50vh;
+    width: 95%;
+    box-shadow: 5px 5px 25px black,-4px -4px 25px black;
+    display: flex;
+    background-color: rgb(42, 41, 41);
+    margin-top: 20px;
+    border-radius: 5px;
+    color:whitesmoke;
+}
+
+/* weather_alerts_section */
+div.weather_alerts{
+    height:8vh;
+    margin-block-start:40px;
+    color: rgb(123, 123, 123);
+    text-align: center;
+    font-size: 2vh;
+}
+
+/* day_reports_section */
+div.day_reports{
+    height:30vh;
+    text-align: center;
+    display:flex;
+    transition:all 1s;
+}
+/* week_reports_section */
+div.week_reports{
+    height:30vh;
+    text-align: center;
+    display:flex;
+    transition:all 1s;
+    padding-left: 20%;
+}
+/* air_reports_section */
+div.air_reports{
+    height:30vh;
+    text-align: center;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    transition:all 1s;
+    width: 50%;
+    margin: auto;
+}
+
+/* sponser_section */
+h3.sponser{
+    height:5vh;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 2vh;
+    font-weight: lighter;
+    padding:20px;
+}
+
+
+.key_info i{
+font-size: 4vh;
+text-shadow: 2px 2px 2px black;
+}
+.air_quality{
+    margin: 10px;
+    border:0.5px solid rgb(169, 168, 168);
+    border-radius: 5px;
+    padding-top:10%;
+}
+.air_quality h3{
+    font-size:3vh;
+}
+.air_quality span{
+    font-size:2vh;
+    color:rgb(111, 110, 110)
+}
+
+.location{
+    margin: 10px;
+    border:0.5px solid rgb(169, 168, 168);
+    border-radius: 5px;
+    padding-top:10%;
+}
+.location h3{
+    font-size:3vh;
+}
+.location span{
+    font-size:2vh;
+    color:rgb(111, 110, 110)
+}
+
+
+/* sports */
+.card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin:10px;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+}   
+    
+ .card   article {
+      padding: 20px;
+      flex: 1;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+  .card  h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #333;
+    }
+    
+   .card p {
+      flex: 1;
+      line-height: 1.4;
+    }
+    
+  .card  span {
+      font-size: 12px;
+      font-weight: bold;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin: 2em 0 0 0;
+    }
+    
+    .thumb {
+      padding-bottom: 60%;
+      background-size: cover;
+      background-position: center center;
+    }
+  
+  
+  .item-1 {
+    @media (min-width: 60em) {
+      grid-column: 1 / span 2;
+      
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }

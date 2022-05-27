@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <meta name = "author" content = "Nikhil kalburgi">
+    <meta name="Application-name" content= "weather-app">
+    <link rel="stylesheet" href="weather.css"  hreflang="en" >
+    <link rel="icon" href="search.png"
+
+  <link rel="stylesheet" href="./icons/css/all.css">
+    <link rel = "icon" href = "#">
+    <base href="#" target="_self">
+</head>
+<body>
+    <div class="bg" style="position: absolute;width:100%;height: 100%;filter:blur(8px)"></div>
+    <div  style="position: absolute;z-index: 2;height: 100%;width: 100%;">
+        <header>
+            <div class = 'highlight_reports'>
+                
+                <figure>
+                    <div><i class="fas fa-map-marker-alt" style='color:white;position:absolute;left:100px;top:65px;font-size: 5vh;'></i>california,USA</div>
+                    <img src="#" alt="no image" loading="eager"><span style="display: inline-block;font-size: 3vh;position: relative;top:-18px;">sjdghasjhj hghj</span>
+                    
+                </figure>
+                <h1 class="temp_number"><strong>12</strong> <sup style="font-size: 4vh;position: relative;top:-20px;">O</sup>C</h1>
+                <time>12:34:13 | 3/04/2021</time>
+            </div>
+            <div class = 'search_bar_section'>
+                <i class="fas fa-search-location" style='position: relative;top:3px;left:-200px;font-size: 3vh;color:rgb(90, 90, 95)'></i>
+                <input type="search" name='search' placeholder="Type your location">
+            </div>
+            <div class = 'key_info'>
+                <h2><i class="fas fa-tint"></i><br><span>21q4 hfh</span><br><br>humidity</h2>
+                <h2><i class="fas fa-wind"></i><br><span>56 poi</span><br><br>air pressure</h2>
+                <h2><i class="fas fa-cloud-showers-heavy"></i><br><span>123 gh</span><br><br>wind blow</h2>
+                <h2><i class="fas fa-smog"></i><br><span> 4567 cc</span><br><br>gust</h2>
+            </div>
+        </header>
+        <footer>
+            <div style="width:35% ;overflow-y: scroll;overflow-x: hidden;padding:10px">
+                <div class="weather_alerts">Sports</div>
+                <div class="sports">
+    
+    
+                </div>
+    
+                <div class="weather_alerts">Astrology</div>
+                <div class="astrology">
+    
+    
+                </div>
+    
+            </div>
+            <div style="width:65%;overflow-y: scroll;overflow-x: hidden;">
+                <div class="weather_alerts"><i class="fas fa-sun" style="color:rgb(245, 221, 8)"></i> - <span></span> <span style="margin-left: 10%;">Day Reports</span> <i class="fas fa-moon" style="color:rgb(245, 221, 8);text-shadow:2px 2px 15px yellow;margin-left:10%;text-shadow: 2px 2px 2px rgb(73, 70, 70);"></i> - <span></span></div>
+                <div class="day_reports"></div><hr>
+                <div class="weather_alerts">Week Reports</div>
+                <div class="week_reports"></div><hr>
+                <div class="weather_alerts">Air Quality Details</div>
+                <div class="air_reports">
+                    <div class="air_quality">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+                    <div class="air_quality">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+                    <div class="air_quality">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+                    <div class="air_quality">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+                    <div class="air_quality">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+                    <div class="air_quality">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+    
+                </div>
+                <div class="weather_alerts">Location Details</div>
+                <div class="air_reports">
+                    <div class="location">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+                    <div class="location">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+                    <div class="location">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+                    <div class="location">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+                    <div class="location">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+                    <div class="location">
+                        <h3></h3><br>
+                        <span></span>
+                    </div>
+    
+                </div>
+                <h3 class="sponser">Service From Weatherapi.com ☁️</h3>
+    
+            </div>
+        </footer>
+    </div>
+
+    <script type='module' src = 'weather.js' media = "all and (min-width : 1000px)">
+
+    </script>
+</body>
+</html>
